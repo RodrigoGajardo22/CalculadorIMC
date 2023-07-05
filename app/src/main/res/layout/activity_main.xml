@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Acividad1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textCategoriaResultado"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="@string/textCategoriaResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoIMCtext" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/alturaText"
+        app:layout_constraintTop_toBottomOf="@+id/editPeso" />
+
+    <TextView
+        android:id="@+id/alturaText"
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="@string/alturaText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoText" />
+
+    <TextView
+        android:id="@+id/tituloText"
+        android:layout_width="218dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/tituloText"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <TextView
+        android:id="@+id/pesoText"
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/pesoText"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloText" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="69dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/pesoText"
+        app:layout_constraintTop_toBottomOf="@+id/tituloText" />
+
+    <Button
+        android:id="@+id/botonCalculo"
+        android:layout_width="132dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/botonCalculo"
+        android:onClick="calcularIMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaText"
+       />
+
+    <TextView
+        android:id="@+id/textCalculoResultado"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="@string/textCalculoResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonCalculo" />
+
+    <TextView
+        android:id="@+id/resultadoIMCtext"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="..........."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalculoResultado"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resultadoCategoriatext"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="..........."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategoriaResultado"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

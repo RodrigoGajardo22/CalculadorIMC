@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalculadorIMC</string>
+    <string name="tituloText">Calculadora de IMC</string>
+    <string name="pesoText">Peso en KG: </string>
+    <string name="alturaText">Altura en metros: </string>
+    <string name="botonCalculo">¡Calcular!</string>
+    <string name="textCalculoResultado">Tu IMC es: </string>
+    <string name="textCategoriaResultado">La categoria de tu IMC es:</string>
+
+</resources>
